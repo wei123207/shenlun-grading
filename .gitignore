@@ -1,0 +1,23 @@
+# 依赖与构建产物
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# 环境变量与密钥（真实密钥绝不入库，只提交 .env.example）
+.env
+.env.local
+.env.*.local
+.tcb/
+
+# Android / Capacitor 构建产物
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android-sdk/
+*.apk
+
+# 上传与临时文件
+uploads/
+__pycache__/

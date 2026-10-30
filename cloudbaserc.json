@@ -1,0 +1,11 @@
+{
+  "envId": "shenlun-d4gplnd59018378c0",
+  "gateway": {
+    "routes": [
+      {
+        "path": "/api/auth-api",
+        "target": "function:auth-api"
+      }
+    ]
+  }
+}

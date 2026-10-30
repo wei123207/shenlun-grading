@@ -1,0 +1,5 @@
+{
+  "name": "auth-api",
+  "dependencies": {},
+  "timeout": 15
+}

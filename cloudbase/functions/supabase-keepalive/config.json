@@ -1,0 +1,9 @@
+{
+  "triggers": [
+    {
+      "name": "keepaliveTimer",
+      "type": "timer",
+      "config": "0 0 8 1/3 * * *"
+    }
+  ]
+}

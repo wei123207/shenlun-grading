@@ -1,0 +1,7 @@
+{
+  "name": "supabase-keepalive",
+  "version": "1.0.0",
+  "description": "Ping Supabase every 3 days to prevent auto-pause",
+  "main": "index.js",
+  "dependencies": {}
+}

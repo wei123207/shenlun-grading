@@ -1,0 +1,20 @@
+{
+  "envId": "shenlun-d4gplnd59018378c0",
+  "gateway": {
+    "domain": "shenlun-d4gplnd59018378c0.service.tcloudbase.com",
+    "routes": [
+      {
+        "path": "/api/baidu-ocr",
+        "target": "function:baidu-ocr"
+      },
+      {
+        "path": "/api/zhipu-ai",
+        "target": "function:zhipu-ai"
+      },
+      {
+        "path": "/api/supabase",
+        "target": "function:supabase"
+      }
+    ]
+  }
+}
