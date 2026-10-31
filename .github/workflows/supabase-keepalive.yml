@@ -15,6 +15,12 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_KEEPALIVE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_KEY" ]; then
+            echo "未配置 Supabase Secrets，跳过本次探活。"
+            echo "配置位置：Settings → Secrets and variables → Actions"
+            echo "需要的变量：SUPABASE_KEEPALIVE_URL、SUPABASE_ANON_KEY"
+            exit 0
+          fi
           STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
             -H "apikey: $SUPABASE_KEY" \
             -H "Authorization: Bearer $SUPABASE_KEY" \
